@@ -1,38 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles.css">
     <title>Tom's Jazz School</title>
 </head>
 <body>
 
     <header>
-        <img src="./assets/img/logo.svg" alt="Tom's Jazz School logo">
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Courses</a>
-            <a href="#">Events</a>
-            <a href="#">Contact</a>
-        </nav>
-        <a href="#" class="button">Sign up</a>
+        <div class="container">
+            <img src="./assets/img/logo.svg" alt="Tom's Jazz School logo">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Courses</a>
+                <a href="#">Events</a>
+                <a href="#">Contact</a>
+            </nav>
+            <a href="#" class="button mt-1 mb-1 mx-auto">Sign up</a>
+        </div>
     </header>
 
     <main>
-        <section>
-            <img src="./assets/img/hero-img.svg" alt="jazz band composed of 3 people, one on guitar, one on piano and one on saxophone">
-            <div>
-                <h1>Create Something <span>Impactful</span> with music</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit culpa quos amet iure debitis voluptatem illum itaque placeat necessitatibus blanditiis voluptas eos quia, a assumenda. Optio numquam quos molestiae quasi!</p>
-                <a href="#" class="button">Start now</a>
+
+        <section class="hero-section">
+            <div class="container row-reverse">
+                <img src="./assets/img/hero-img.svg" alt="jazz band composed of 3 people, one on guitar, one on piano and one on saxophone">
+                <div>
+                    <h1 class="mt-2">Create Something <span class="text-primary decoration">Impactful</span> with music</h1>
+                    <p class="mt-2 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit culpa quos amet iure debitis voluptatem illum itaque placeat necessitatibus blanditiis voluptas eos quia, a assumenda. Optio numquam quos molestiae quasi!</p>
+                    <a href="#" class="button">Start now</a>
+                </div>
             </div>
         </section>
+       
 
-        <section>
+        <section class="courses-section">
             <div class="cards">
-                <article>
+                <article class="card">
                     <img src="./assets/img/piano.png" alt="a piano logo">
                     <strong>Popular piano</strong>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, optio.</p>
@@ -41,7 +50,7 @@
                     </a>
                 </article>
 
-                <article>
+                <article class="card">
                     <img src="./assets/img/clef.png" alt="a clef logo">
                     <strong>Musical theory</strong>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, optio.</p>
@@ -50,7 +59,7 @@
                     </a>
                 </article>
 
-                <article>
+                <article class="card">
                     <img src="./assets/img/sax.png" alt="a sax logo">
                     <strong>Sax loud</strong>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, optio.</p>
@@ -59,7 +68,7 @@
                     </a>
                 </article>
 
-                <article>
+                <article class="card">
                     <img src="./assets/img/drums.png" alt="a drums logo">
                     <strong>Drums</strong>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, optio.</p>
@@ -69,30 +78,31 @@
                 </article>
             </div>
 
-            <h2>And <span>several</span> others!</h2>
-            <a href="#" class="button">Know the courses</a>
+            <h2 class="text-center">And <span class="text-primary">several</span> others!</h2>
+            <a href="#" class="button mt-2 mx-auto">Know the courses</a>
         </section>
     </main>
 
     <footer>
+        <div class="container">
+            <div class="about">
+                <img src="./assets/img/logo.svg" class="mt-1 mb-1" alt="Tom's Jazz School logo">
+                <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quis reprehenderit dicta reiciendis ut, inventore error sit esse. Sint qui similique omnis eaque unde consequatur nobis delectus deleniti placeat modi!</p>
+            </div>
 
-        <div>
-            <img src="./assets/img/logo.svg" alt="Tom's Jazz School logo">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quis reprehenderit dicta reiciendis ut, inventore error sit esse. Sint qui similique omnis eaque unde consequatur nobis delectus deleniti placeat modi!</p>
+            <nav class="mb-2">
+                <a href="#">Home</a>
+                <a href="#">Courses</a>
+                <a href="#">Events</a>
+                <a href="#">Contact</a>
+            </nav>
+
+            <form>
+                <label for="email" class="mb-1">Receive free material in your email</label>
+                <input type="text" name="email" id="email" class="mb-1" placeholder="your email here">
+                <button class="button mb-2">I want to receive</button>
+            </form>
         </div>
-
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Courses</a>
-            <a href="#">Events</a>
-            <a href="#">Contact</a>
-        </nav>
-
-        <form>
-            <label for="email">Receive free material in your email</label>
-            <input type="text" name="email" id="email" placeholder="your email here">
-        </form>
-
     </footer>
 </body>
 </html>
